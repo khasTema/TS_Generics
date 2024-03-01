@@ -99,3 +99,9 @@ type Employee = Person;
 type Admin = Person;
 type Director = Person;
 type CompanyType = Company<Employee, Accountant>;
+
+const timestamp = new Date().getTime(); // number
+const timeString = new Date().toString(); // string
+
+const time: (string | number)[] = [timestamp, timeString];
+console.table(time);
